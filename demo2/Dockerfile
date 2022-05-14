@@ -40,4 +40,5 @@ ENV JAVA_HOME="${BISQ_HOME}/jdk-15.0.2"
 ENV PATH="${JAVA_HOME}/bin:${PATH}"
 EXPOSE 9998
 COPY --chown=root:root start-bisq.sh ${BISQ_HOME}
+# CMD ["/bin/bash", "-c", "java -jar ${BISQ_HOME}/daemon.jar --apiPort=9998 --apiPassword=xyz"]
 
