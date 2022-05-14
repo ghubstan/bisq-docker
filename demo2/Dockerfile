@@ -30,7 +30,7 @@ RUN echo "Install Ubuntu packages..." \
     && gpg --digest-algo SHA256 --verify bisq-daemon-1.9.1.zip.asc \
     && unzip -q bisq-cli-1.9.1.zip \
     && unzip -q bisq-daemon-1.9.1.zip \
-    && echo "Clean up dist, checksum files..." \
+    && echo "Clean up distribution and checksum files..." \
     && rm -v *.sha256 \
     && rm -v *.asc \
     && rm -v *.tar.gz \
