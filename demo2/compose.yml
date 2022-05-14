@@ -1,0 +1,12 @@
+# Validate YAML:  http://www.yamllint.com
+# https://linuxhandbook.com/docker-file-vs-docker-compose
+# Dockerfile is what's used to create a container image.
+# Compose file is what's used to deploy an instance of that image as a container.
+# Help:   $ sudo docker compose up --help
+# Usage:  $ sudo docker compose up 		[exits]
+# Usage:  $ sudo docker compose up 	-d	[detach and leave running]
+version: "3"
+services:
+  app:
+    image: ubuntu-bisq
+
